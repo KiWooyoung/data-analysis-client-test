@@ -1,7 +1,7 @@
 import React from 'react';
 
-function TrafficLiveInformationContainer() {
+function TrafficLiveInfoContainer() {
   console.log('TrafficLiveInformation');
 }
 
-export default TrafficLiveInformationContainer;
+export default TrafficLiveInfoContainer;

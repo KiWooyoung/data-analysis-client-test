@@ -1,5 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
+import Map from '../../containers/main/MapContainer';
+import RoadInfo from '../../containers/main/RoadInfoContainer';
+import RouteETAInfo from '../../containers/main/RouteETAInfoContainer';
+import RouteSetting from '../../containers/main/RouteSettingContainer';
+import TrafficLiveInfo from '../../containers/main/TrafficLiveInfoContainer';
 
 type DrivingLogAnalysisPageProps = {
   title: string;

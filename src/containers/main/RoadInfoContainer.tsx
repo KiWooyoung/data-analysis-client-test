@@ -1,7 +1,7 @@
 import React from 'react';
 
-function RoadInformationContainer() {
+function RoadInfoContainer() {
   console.log('RoadInformation');
 }
 
-export default RoadInformationContainer;
+export default RoadInfoContainer;
