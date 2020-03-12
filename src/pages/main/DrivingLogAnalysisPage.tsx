@@ -1,31 +1,34 @@
 import React from 'react';
 import styled from 'styled-components';
 
-type HomePageProps = {
+type DrivingLogAnalysisPageProps = {
   title: string;
   content: string;
 };
 
-function HomePage({ title, content }: HomePageProps) {
+function DrivingLogAnalysisPage({
+  title,
+  content,
+}: DrivingLogAnalysisPageProps) {
   const renderTitle = <h3>{title}</h3>;
 
   return (
-    <S.HomePage>
+    <S.DrivingLogAnalysisPage>
       {renderTitle}
       <p>{content}</p>
-    </S.HomePage>
+    </S.DrivingLogAnalysisPage>
   );
 }
 
-HomePage.defaultProps = {
+DrivingLogAnalysisPage.defaultProps = {
   title: '타이틀 기본 값',
   content: '콘텐츠 기본 값',
 };
 
-export default HomePage;
+export default DrivingLogAnalysisPage;
 
 const S: any = {};
 
-S.HomePage = styled.div`
+S.DrivingLogAnalysisPage = styled.div`
   ...style 작성;
 `;

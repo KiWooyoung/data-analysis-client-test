@@ -5,9 +5,14 @@ import {
   Route,
   Switch,
 } from 'react-router-dom';
+// eslint-disable-next-line @typescript-eslint/ban-ts-ignore
+// @ts-ignore
+import loadable from '@loadable/component';
 import ErrorBoundary from '../components/error';
 import LoginPage from './login/LoginPage';
-import MainPage from './main/HomePage';
+import MainPage from './main/DrivingLogAnalysisPage';
+const LP = loadable(() => import('./login/LoginPage'));
+const MP = loadable(() => import('./main/DrivingLogAnalysisPage'));
 
 function AppRouter() {
   return (
